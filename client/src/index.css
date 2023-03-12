@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+ padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-image:url('https://res.cloudinary.com/deqbqghhq/image/upload/v1678550827/Proyecto_nuevo_1_qxsdvt.jpg') ;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-position:0 0;
+  background-size: 100vw 100vh;
+  font-family:'Times New Roman', Times, serif;
+  font-size: medium;
+}

@@ -1,0 +1,54 @@
+.btn{
+  background-color: rgba(1, 30, 89, 0);
+  display: block;
+  width: 1.8rem;
+  position: absolute;
+  right: 0.35rem;
+  top: 0.6rem;
+  border: none;
+ color: antiquewhite;
+ cursor: pointer;
+ font-size: small;
+    
+}
+.container{
+    background-color: rgba(1, 30, 89, 0.354);
+    border:none; /* rgba(3, 68, 109, 0.81) solid 1px; */
+    border-radius: 0.3rem;
+    display:flex;
+    flex-direction: column;
+    width: 18rem;
+    height: 10.5rem;
+    position: relative;
+    color:aliceblue;
+    margin: 0.5rem;
+}
+.data{
+    display: flex;
+    flex-direction: column;
+    width: 8rem;
+    height: 5.5rem;
+    color:antiquewhite;
+    justify-content: center;
+}
+.data p{
+    margin:0 0 0 1rem;
+    font-size: 1rem;
+    text-align: left;
+}
+
+
+.temp{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1rem;
+}
+.tempAct{
+    margin-left:2.5rem;
+    font-size: 2rem;
+}
+.containerData{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}

@@ -1,0 +1,7 @@
+.contenedor{
+  margin-top: 8rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
