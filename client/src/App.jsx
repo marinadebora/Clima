@@ -2,14 +2,16 @@ import React, {useState} from 'react';
 import './App.css';
 import Nav from './components/Nav'
 import Cards from './components/Cards.jsx';
-import axios from 'axios';
+
 
 export default function App() {
 
   const [cities, setCities] = useState([]);
-  async function onSearch(ciudad) {
-    const recurso= await axios(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=f56f233b04c9d4aea3d1eed044dc786e&units=metric`)
-
+  function onSearch(ciudad) {
+    
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=f56f233b04c9d4aea3d1eed044dc786e&units=metric`)
+      .then(r => r.json())
+      .then((recurso) => {
         if(recurso.main !== undefined){
           const ciudad = {
             min: Math.round(recurso.main.temp_min),
@@ -27,7 +29,7 @@ export default function App() {
         } else {
           alert("City not found");
         }
-      
+      });
       
     }
     function onClose(id) {
