@@ -3,13 +3,15 @@ import './App.css';
 import Nav from './components/Nav'
 import Cards from './components/Cards.jsx';
 
+const {VITE_API_KEY}=import.meta.env
+
 
 export default function App() {
 
   const [cities, setCities] = useState([]);
   function onSearch(ciudad) {
     
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=f56f233b04c9d4aea3d1eed044dc786e&units=metric`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${VITE_API_KEY}&units=metric`)
       .then(r => r.json())
       .then((recurso) => {
         if(recurso.main !== undefined){
